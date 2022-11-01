@@ -31,3 +31,17 @@ article [data-button="fermer"] {
     right: 0;
     text-decoration: none;
 }
+article [data-button="fermer"]:hover {
+    background: #fff;
+    color: #c00;
+}
+
+article > section {
+    display: block;
+    opacity: 0;
+    transition: opacity 1s;
+    transition-delay: 1s;
+}
+article:target > section {
+    opacity: 1;
+}
